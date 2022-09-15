@@ -1,0 +1,17 @@
+<div>
+  <ui-cust-title title="ECM Projecct"></ui-cust-title>
+  <table *ngIf="tableData.length > 0">
+    <thead>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of tableData">
+        <td>{{row.id}}</td>
+        <td>{{row.title.romaji}}</td>
+        <td>{{row.description}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
